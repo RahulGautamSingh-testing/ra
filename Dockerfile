@@ -1,2 +1,1 @@
-FROM quay.io/bye:6@sha256:11a5e2e0ec2d52d4ccb7ca0e68489fe70089e7e3e221e392d0c69c8e04b45d38
-FROM docker.io/hello:6@sha256:11a5e2e0ec2d52d4ccb7ca0e68489fe70089e7e3e221e392d0c69c8e04b45d38
+FROM quay.io/openshift/okd sha256:92d80a171a40f684ef029e255e2d7d90b277a198507d7436cdd9e1dd2fc3bc8d
