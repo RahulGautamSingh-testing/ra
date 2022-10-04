@@ -3,19 +3,19 @@
    "hostRules": [
         {
             "matchHost": "my-registry.io",
-            "enabled": true,
+            "enabled": true
         },
         {
             "matchHost": "my-registry1.io",
-            "enabled": true,
+            "enabled": true
         },
         {
             "matchHost": "quay.io",
-            "enabled": false,
+            "enabled": false
         },
         {
             "matchHost": "docker.io",
-            "enabled": false,
+            "enabled": false
         }
     ],
     "packageRules": [
