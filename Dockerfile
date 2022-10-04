@@ -3,7 +3,7 @@ ARG RENOVATE_VERSION=32.215.0
 
 # Base image
 #============
-FROM renovate/buildpack:6@sha256:11a5e2e0ec2d52d4ccb7ca0e68489fe70089e7e3e221e392d0c69c8e04b45d38 AS base
+FROM docker.io/hello:6@sha256:11a5e2e0ec2d52d4ccb7ca0e68489fe70089e7e3e221e392d0c69c8e04b45d38 AS base
 
 LABEL name="renovate"
 LABEL org.opencontainers.image.source="https://github.com/renovatebot/renovate" \
@@ -43,7 +43,7 @@ RUN set -ex; \
 
 # Final image
 #============
-FROM base as final
+FROM quay.io/hello:6@sha256:11a5e2e0ec2d52d4ccb7ca0e68489fe70089e7e3e221e392d0c69c8e04b45d38 AS final
 
 # renovate: datasource=github-releases depName=docker lookupName=moby/moby
 RUN install-tool docker 20.10.7
