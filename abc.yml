@@ -1,0 +1,25 @@
+version: 2
+
+environment: &environment
+  - PROJECT_NAME: renovate-issue-repro-6913
+
+working_directory: &working_directory /tmp/build
+
+jobs:
+  hello_world:
+    working_directory: *working_directory
+    docker:
+      - image: quay.io/condenastinternational/cnid-build-base:01de4f4201a860947eb348cd85f28af590af8975@sha256:95a414e53fca401fa4d1e5c02d494e8a9210c6981a2f744bbc2d432dd1965362
+        environment: *environment
+    resource_class: small
+    steps:
+      - checkout
+      - run:
+          name: Hello World
+          command: echo "Hello World!"
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - hello_world
