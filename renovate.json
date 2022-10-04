@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dockerfile": {
   "registryAliases": {
-    "quay.io": "https://my-registry.io"
+    "quay.io": "my-registry.io"
   }
  }
 }
