@@ -1,24 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-   hostRules: [
+   "hostRules": [
         {
-            matchHost: "my-registry.io",
-            enabled: true,
+            "matchHost": "my-registry.io",
+            "enabled": true,
         },
         {
-            matchHost: "my-registry1.io",
-            enabled: true,
+            "matchHost": "my-registry1.io",
+            "enabled": true,
         },
         {
-            matchHost: "quay.io",
-            enabled: false,
+            "matchHost": "quay.io",
+            "enabled": false,
         },
         {
-            matchHost: "docker.io",
-            enabled: false,
+            "matchHost": "docker.io",
+            "enabled": false,
         }
     ],
-    packageRules: [
+    "packageRules": [
         {
             "matchDatasources": [
                 "docker"
