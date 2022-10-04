@@ -23,6 +23,7 @@
             "matchDatasources": [
                 "docker"
             ],
+            "registryStrategy": "hunt",
             "registryUrls": [
                 "my-registry.io",
                 "my-registry1.io"
