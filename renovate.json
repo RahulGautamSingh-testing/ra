@@ -30,8 +30,8 @@
             ],
             "registryAliases":
             {
-                "quay.io": "https://my-registry1.io",
-                "docker.io": "http://my-registry.io"
+                "quay.io": "https://my-registry.io",
+                "docker.io": "http://my-registry1.io"
             }
         }
     ]
